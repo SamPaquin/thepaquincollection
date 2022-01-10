@@ -1,0 +1,191 @@
+@import "../../Sass/App.scss";
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page__section {
+  position: relative;
+}
+
+.about-page__section__photographer-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-page__section__photographer-image img {
+  width: 100%;
+}
+
+.photographer-image-decor {
+  display: none;
+}
+
+.about-page__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  color: $berry;
+  background-color: $white;
+  padding: 10px 0;
+}
+
+.about-page__content h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 30px;
+  color: $berry;
+}
+
+.about-page__content span {
+  color: $darkberry;
+}
+
+.about-page__content-cursive {
+  font-family: "Corinthia", cursive;
+  font-size: 35px;
+  color: $black;
+}
+
+.about-page__content-text {
+  width: 95%;
+  margin: 5px 0;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  background-color: $berry;
+  width: 100%;
+}
+
+.contact-section h4 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  color: $white;
+}
+
+.contact-section p {
+  font-family: "Corinthia", cursive;
+  font-size: 50px;
+  color: $black;
+}
+
+.contact-section button {
+  font-family: "Libre Baskerville", serif;
+  background-color: $white;
+  border: none;
+  border-radius: 2px;
+  color: $darkberry;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.mini-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mini-gallery img {
+  width: 50%;
+}
+
+@media only screen and (min-width: 880px) {
+  .about-page {
+    align-items: center;
+    background-color: $white;
+    padding-top: 100px;
+  }
+
+  .about-page__section {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  .about-page__section__photographer-image {
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .about-page__section__photographer-image img {
+    width: 400px;
+    border-radius: 2px;
+    z-index: 10;
+  }
+
+  .photographer-image-decor {
+    display: block;
+    position: absolute;
+    background-color: $offwhite;
+    width: 800px;
+    height: 400px;
+    left: 220px;
+    border-radius: 2px;
+  }
+
+  .about-page__content {
+    background-color: transparent;
+    width: 45%;
+    max-width: 600px;
+    z-index: 10;
+  }
+
+  .about-page__content h2 {
+    font-size: 40px;
+  }
+
+  .about-page__content-cursive {
+    font-size: 45px;
+  }
+
+  .about-page__content-text {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .contact-section {
+    padding: 30px 0;
+    margin-top: 20px;
+  }
+
+  .contact-section h4 {
+    font-size: 30px;
+  }
+
+  .contact-section p {
+    font-size: 45px;
+  }
+
+  .contact-section button {
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  .contact-section button:hover {
+    cursor: pointer;
+    background-color: $white;
+    color: $darkberry;
+  }
+
+  .mini-gallery img {
+    width: 25%;
+  }
+}

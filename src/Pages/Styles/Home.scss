@@ -1,0 +1,130 @@
+@import "../../Sass/App.scss";
+
+.home-section__content {
+  position: relative;
+}
+
+.home-section__content__image img {
+  display: block;
+  width: 100%;
+}
+
+.home-section__content__text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  padding-left: 1%;
+  color: $white;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1rem;
+  z-index: 10;
+}
+
+.home-section__content__text h2 {
+  font-size: 2rem;
+}
+
+.home-section__content__text-cursive {
+  font-family: "Corinthia", cursive;
+  font-size: 3rem;
+}
+
+.home-section__content__image__background {
+  display: none;
+}
+
+.home-section__gallery {
+  display: none;
+}
+
+@media only screen and (min-width: 880px) {
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $white;
+  }
+
+  .home-section__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3% 0 10% 0;
+  }
+
+  .home-section__content__image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 600px;
+  }
+
+  .home-section__content__image img {
+    width: 400px;
+    border-radius: 2px;
+  }
+
+  .home-section__content__image__foreground {
+    z-index: 10;
+  }
+
+  .home-section__content__image__background {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    z-index: 9;
+  }
+
+  .home-section__content__image__decor {
+    border-radius: 2px;
+    position: absolute;
+    background-color: $offwhite;
+    width: 1500px;
+    height: 300px;
+  }
+
+  .home-section__content__text {
+    position: static;
+    width: 50%;
+    max-width: 410px;
+    font-size: 20px;
+    padding-left: 30px;
+    color: $berry;
+  }
+
+  .home-section__content__text h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 40px;
+    color: $darkberry;
+  }
+
+  .home-section__content__text-cursive {
+    font-size: 60px;
+    color: $black;
+  }
+
+  .home-section__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .home-section__gallery img {
+    width: 25%;
+  }
+}

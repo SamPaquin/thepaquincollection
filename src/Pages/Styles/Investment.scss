@@ -1,0 +1,143 @@
+@import "../../Sass/App.scss";
+
+.investment-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: $white;
+}
+
+.investment-page-decor {
+  display: none;
+}
+
+.investment-page__section {
+  display: flex;
+  justify-content: center;
+}
+
+.investment-page__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 15px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  color: $berry;
+  z-index: 10;
+  width: 90%;
+}
+
+.investment-page__content h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 34px;
+  color: $darkberry;
+}
+
+.inestment-page__content-cursive {
+  font-family: "Corinthia", cursive;
+  font-size: 50px;
+  color: $black;
+}
+
+.investment-page__content-text {
+  margin-top: 5px;
+}
+
+.investment-page__content button {
+  font-family: "Libre Baskerville", serif;
+  border: 1px solid $darkberry;
+  border-radius: 2px;
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  margin-top: 10px;
+  align-self: center;
+  background-color: $darkberry;
+  color: $white;
+}
+
+.investment-page__content__decor {
+  display: none;
+}
+
+.investment-page__image {
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .investment-page {
+    position: relative;
+    padding: 0;
+    width: 100%;
+  }
+
+  .investment-page-decor {
+    display: block;
+    width: 100%;
+    background-color: $berry;
+    height: 300px;
+    position: absolute;
+    top: 140px;
+  }
+
+  .investment-page__section {
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    padding: 60px 0 40px 0;
+  }
+
+  .investment-page__content {
+    width: 500px;
+  }
+
+  .investment-page__content h2 {
+    font-size: 40px;
+  }
+
+  .investment-page__content-text {
+    margin-top: 15px;
+  }
+
+  .investment-page__content button {
+    background-color: transparent;
+    border-radius: 2px;
+    color: $darkberry;
+    margin-top: 30px;
+  }
+
+  .investment-page__content button:hover {
+    cursor: pointer;
+    background-color: $darkberry;
+    color: $white;
+  }
+
+  .investment-page__content__decor {
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    background-color: $offwhite;
+    width: 1000px;
+    height: 440px;
+    right: 0;
+    z-index: 9;
+  }
+
+  .investment-page__image {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: 15px;
+  }
+
+  .investment-page__image img {
+    border-radius: 2px;
+    width: 700px;
+    z-index: 10;
+  }
+}

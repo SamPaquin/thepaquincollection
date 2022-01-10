@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: #fff;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 100;
+}
+
+#main-logo {
+  width: 95%;
+  min-width: 300px;
+}
+
+.nav-links {
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  #main-logo {
+    max-width: 500px;
+  }
+  .nav-links__container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    z-index: 100;
+  }
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 600px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #b7a7a7;
+    font-size: 20px;
+  }
+  .nav-links a:hover {
+    color: #7e6c6c;
+  }
+}
+
+.about-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-page__section {
+  position: relative;
+}
+
+.about-page__section__photographer-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-page__section__photographer-image img {
+  width: 100%;
+}
+
+.photographer-image-decor {
+  display: none;
+}
+
+.about-page__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  color: #b7a7a7;
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.about-page__content h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 30px;
+  color: #b7a7a7;
+}
+
+.about-page__content span {
+  color: #7e6c6c;
+}
+
+.about-page__content-cursive {
+  font-family: "Corinthia", cursive;
+  font-size: 35px;
+  color: #000;
+}
+
+.about-page__content-text {
+  width: 95%;
+  margin: 5px 0;
+}
+
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  background-color: #b7a7a7;
+  width: 100%;
+}
+
+.contact-section h4 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.contact-section p {
+  font-family: "Corinthia", cursive;
+  font-size: 50px;
+  color: #000;
+}
+
+.contact-section button {
+  font-family: "Libre Baskerville", serif;
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  color: #7e6c6c;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.mini-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mini-gallery img {
+  width: 50%;
+}
+
+@media only screen and (min-width: 880px) {
+  .about-page {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    padding-top: 100px;
+  }
+  .about-page__section {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 80px;
+  }
+  .about-page__section__photographer-image {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+  }
+  .about-page__section__photographer-image img {
+    width: 400px;
+    border-radius: 2px;
+    z-index: 10;
+  }
+  .photographer-image-decor {
+    display: block;
+    position: absolute;
+    background-color: #eeeeee;
+    width: 800px;
+    height: 400px;
+    left: 220px;
+    border-radius: 2px;
+  }
+  .about-page__content {
+    background-color: transparent;
+    width: 45%;
+    max-width: 600px;
+    z-index: 10;
+  }
+  .about-page__content h2 {
+    font-size: 40px;
+  }
+  .about-page__content-cursive {
+    font-size: 45px;
+  }
+  .about-page__content-text {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .contact-section {
+    padding: 30px 0;
+    margin-top: 20px;
+  }
+  .contact-section h4 {
+    font-size: 30px;
+  }
+  .contact-section p {
+    font-size: 45px;
+  }
+  .contact-section button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+  }
+  .contact-section button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #7e6c6c;
+  }
+  .mini-gallery img {
+    width: 25%;
+  }
+}
+/*# sourceMappingURL=About.css.map */

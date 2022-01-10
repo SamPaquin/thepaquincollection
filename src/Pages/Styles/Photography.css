@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: #fff;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 100;
+}
+
+#main-logo {
+  width: 95%;
+  min-width: 300px;
+}
+
+.nav-links {
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  #main-logo {
+    max-width: 500px;
+  }
+  .nav-links__container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    z-index: 100;
+  }
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 600px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #b7a7a7;
+    font-size: 20px;
+  }
+  .nav-links a:hover {
+    color: #7e6c6c;
+  }
+}
+
+.photography-page {
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.photography-image {
+  display: none;
+}
+
+.photography-page__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.photography-page__content-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 18px;
+  color: #b7a7a7;
+  width: 95%;
+}
+
+.photography-page__content-text h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 30px;
+  color: #7e6c6c;
+}
+
+.photography-page__content-text-cursive {
+  font-family: "Corinthia", cursive;
+  font-size: 35px;
+  color: #000;
+  margin: 5px 0;
+}
+
+.photography-page__content-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  width: 95%;
+}
+
+.photography-page__content-links button {
+  color: #fff;
+  background-color: #7e6c6c;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  font-family: "Libre Baskerville", serif;
+}
+
+@media only screen and (min-width: 880px) {
+  .photography-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  .photography-page__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+  }
+  .photography-image {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .photography-image img {
+    width: 600px;
+    z-index: 10;
+  }
+  .photography-image__decor {
+    position: absolute;
+    width: 1000px;
+    height: 350px;
+    background-color: #eeeeee;
+    top: 20px;
+    left: 130px;
+  }
+  .photography-page__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 20px;
+    z-index: 10;
+    background-color: transparent;
+  }
+  .photography-page__content-text {
+    width: 500px;
+    font-size: 20px;
+  }
+  .photography-page__content-text h2 {
+    font-size: 40px;
+  }
+  .photography-page__content-text-cursive {
+    font-size: 45px;
+  }
+  .photography-page__content-links {
+    padding: 15px 0;
+    width: 90%;
+  }
+  .photography-page__content-links button {
+    background-color: transparent;
+    border: 1px solid #7e6c6c;
+    padding: 10px;
+    color: #7e6c6c;
+  }
+  .photography-page__content-links button:hover {
+    color: #fff;
+    background-color: #7e6c6c;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=Photography.css.map */

@@ -1,0 +1,80 @@
+@import "../../../Sass/App.scss";
+
+.navbar {
+  background-color: $white;
+  margin-bottom: 10px;
+}
+
+.menu-bars {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hambuger-icon div {
+  width: 35px;
+  height: 5px;
+  background-color: $darkberry;
+  margin: 6px 0;
+}
+
+.nav-menu {
+  background-color: $offwhite;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  transition: 350ms;
+  z-index: 1000;
+}
+
+.nav-menu.active {
+  top: 0;
+  transition: 350ms;
+}
+
+.nav-menu img {
+  width: 0px;
+}
+
+.nav-menu.active img {
+  width: 60%;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: $darkberry;
+  font-size: 2rem;
+}
+
+.nav-menu-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.navbar-toggle {
+  background-color: $offwhite;
+  width: 100%;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $darkberry;
+}
+
+@media only screen and (min-width: 640px) {
+  .navbar {
+    display: none;
+  }
+}

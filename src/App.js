@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./Components/Layout/Footer/Footer";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Photography from "./Pages/Photography";
+import Videography from "./Pages/Videography";
+import Investment from "./Pages/Investment";
+import Contact from "./Pages/Contact";
+import Logo from "./Images/Logo.png";
+import "./Sass/App.css";
+import Navbar from "./Components/Layout/Navbar/Navbar";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="content" id="home">
+      <img id="main-logo" src={Logo} alt="The Paquin Collection" />
+      <div className="nav-links__container">
+        <Navbar />
+        <ul className="nav-links">
+          <li>
+            <a href="#home">home</a>
+          </li>
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>
+            <a href="#photography">photography</a>
+          </li>
+          <li>
+            <a href="#videography">videography</a>
+          </li>
+          <li>
+            <a href="#investment">investment</a>
+          </li>
+          <li>
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+      <Home />
+      <About />
+      <Photography />
+      <Videography />
+      <Investment />
+      <Contact />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

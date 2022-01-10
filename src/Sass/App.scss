@@ -1,0 +1,88 @@
+// Colors
+$berry: #b7a7a7;
+$darkberry: #7e6c6c;
+$offwhite: #eeeeee;
+$white: #fff;
+$black: #000;
+
+// Fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&display=swap");
+// font-family: 'Corinthia', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+// font-family: 'Libre Baskerville', serif;
+
+// Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// App.js Styles
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: $white;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: $white;
+  position: relative;
+  z-index: 100;
+}
+
+#main-logo {
+  width: 95%;
+  min-width: 300px;
+}
+
+.nav-links {
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  #main-logo {
+    max-width: 500px;
+  }
+
+  .nav-links__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    z-index: 100;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: $berry;
+    font-size: 20px;
+  }
+
+  .nav-links a:hover {
+    color: $darkberry;
+  }
+}
