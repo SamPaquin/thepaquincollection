@@ -52,7 +52,7 @@ html {
   display: none;
 }
 
-@media only screen and (min-width: 813px) {
+@media only screen and (min-width: 640px) {
   #main-logo {
     max-width: 500px;
   }
@@ -270,7 +270,7 @@ input[type="submit"] {
   color: #fff;
 }
 
-@media only screen and (min-width: 813px) {
+@media only screen and (min-width: 640px) {
   .contact-page__gallery img {
     width: 25%;
   }

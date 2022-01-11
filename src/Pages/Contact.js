@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 
+import ContactImage from "../Images/Contact/ContactImage.jpg";
 import ContactGallery1 from "../Images/Contact/ContactGallery1.jpg";
 import ContactGallery2 from "../Images/Contact/ContactGallery2.jpg";
 import ContactGallery3 from "../Images/Contact/ContactGallery3.jpg";
@@ -38,17 +39,17 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="contact-page__gallery">
-        <img src={ContactGallery1} alt="Eustice Family" />
-        <img src={ContactGallery2} alt="Eustice Family" />
-        <img src={ContactGallery3} alt="Eustice Family" />
-        <img src={ContactGallery4} alt="Eustice Family" />
-        <img src={ContactGallery5} alt="Eustice Family" />
-        <img src={ContactGallery6} alt="Eustice Family" />
-        <img src={ContactGallery7} alt="Eustice Family" />
-        <img src={ContactGallery8} alt="Eustice Family" />
+        <img src={ContactGallery1} alt="Contact" />
+        <img src={ContactGallery2} alt="Contact" />
+        <img src={ContactGallery3} alt="Contact" />
+        <img src={ContactGallery4} alt="Contact" />
+        <img src={ContactGallery5} alt="Contact" />
+        <img src={ContactGallery6} alt="Contact" />
+        <img src={ContactGallery7} alt="Contact" />
+        <img src={ContactGallery8} alt="Contact" />
       </div>
       <div className="contact-page__section" id="contact">
-        <img src={ContactGallery1} alt="contact" />
+        <img src={ContactImage} alt="Contact" />
         <div className="contact-page-decor" />
         <div className="contact-page__content">
           <h2>Let's Connect</h2>
